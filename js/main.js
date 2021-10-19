@@ -14,7 +14,7 @@
             enlace=document.createElement("a"),
             contenido = document.createTextNode(tarea);
         if (tarea === "") {
-            tareaInput.setAttribute("placeholder", "Agrega una tarea validad");
+            tareaInput.setAttribute("placeholder", "Debes agregar una tarea");
             tareaInput.className = "error";
             return false;
         } 
@@ -40,6 +40,7 @@
         tareaInput.className="";
         tareaInput.setAttribute("placeholder", "Agregar tu tarea")
     };
+    
     var eliminarTarea = function (){
         this.parentNode.removeChild(this);
     };
